@@ -209,11 +209,45 @@ header nav .form i {
     transform: translateY(-50%);
     color: #ddd;   
   }
+  @media (max-width: 767px) {
+    .landing .change-background
+    {
+     display: none ;
+  }
+} 
   .landing .fa-angle-left{
     left: 30px;
   }
   .landing .fa-angle-right{
     right:30px;
   }
+  .landing .bullets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    display: flex;
 
+  }
+  .landing .bullets li {
+    width: 20px;
+    height: 20px;
+    border: solid 1px white;
+    border-radius: 100px;
+    margin-right: 10px;
+  }
+  .landing .bullets li.active {
+   background: var(--main-color);
+   border-color: var(--main-color);
+  }
+  @media (max-width: 767px) {
+    .landing .text 
+    {
+     width: 100% ;
+    }
+    .landing .text .content {
+      max-width: 100%;
+    }
+  }
+  
  /*End Landing*/
