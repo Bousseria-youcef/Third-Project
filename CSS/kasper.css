@@ -2,6 +2,7 @@
 :root{
   --main-color:#19c8fa;
   --transparent-color: rgb(15 116 143 / 70%);
+  --component-color:#777;
 }
 /* End  Variables  */
 
@@ -14,13 +15,56 @@
   margin: 0;
 }
 /*End   Global Rules */
+/* Start Component */
+ .main-heading {
+text-align: center;
+margin-top: 70px;
+} 
+.main-heading h2{
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+ }
+ .main-heading h2::before{
+ content: "";
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);
+ height: 2px;
+ background-color: #333;
+ bottom: -30px;
+ width: 120px;
+}
+.main-heading h2::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 14px;
+  bottom: -38px;
+  width: 14px;
+  border: solid 2px #333;
+  border-radius: 50%;
+  background-color: white;
+}
+.section .main-heading p{
+  width: 550px;
+  margin: 0 auto 100px;
+  max-width: 100%;
+  line-height: 2;
+  color: var(--component-color);
+}
+
+ /*End Component  */
 html {
 scroll-behavior: smooth;
 }
 
  body{
   font-family: 'Open Sans', sans-serif;
-  background-color:black;
+  
  }
 
  header nav .toggle-menu
@@ -249,5 +293,5 @@ header nav .form i {
       max-width: 100%;
     }
   }
-  
+ 
  /*End Landing*/
