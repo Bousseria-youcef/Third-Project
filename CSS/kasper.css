@@ -882,6 +882,7 @@ display: flex;
     display: flex;
     align-items: center;
    }
+   
    @media(max-width:991px) {
     .subscribe .container{
       flex-direction: column; 
@@ -905,7 +906,6 @@ display: flex;
 
     border: 1px solid white;
     border-right: transparent;
-   
     background-color: transparent;
     padding: 20px 20px 20px 60px;
     caret-color: var(--main-color);
@@ -928,7 +928,126 @@ display: flex;
    .subscribe form input[type="submit"]:focus,
    .subscribe form input[type="email"]:focus {
     outline: none;
+   }
+   .subscribe p{
+    line-height: 2;
+    margin-left: 50px;
+   }
+   @media(max-width:991px) {
+    .subscribe p{
+     margin: 30px 0 0 ;
+    }
+  }
 
+  
+   /*End Subscribe*/
+
+   /*Start Contact*/
+   .contact {
+    padding-bottom: var(--section-padding);
+    padding-top: var(--section-padding);
+
+  }
+  .contact  .content{
+    display: flex;
+    justify-content: space-between;
+   }
+   @media (max-width:767px) {
+    .contact  .content{
+      flex-direction: column;
+      
+     }
+   }
+   .contact  .content form {
+   flex-basis: 70%;
+  }
+  .contact  .content form .main-input{
+    display: block;
+    width: 100%; 
+    margin-bottom: 30px;
+    border: solid 1px #ccc;
+    padding: 20px;
+  }
+  .contact .content form .main-input:focus {
+  outline: none;
+  }
+  .contact .container .content form ::placeholder{
+    padding-top: 20px;
+    padding-left: 20px; 
+  }
+  
+  .contact .container .content textarea {
+    height: 200px ;
+  }
+ 
+
+   .contact form input[type="submit"] {
+    background-color: var(--main-color);
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px ;
+    cursor: pointer;
+    display: flex;
+    margin-left: auto;
+}
+
+   
+   .contact  .content .info {
+     flex-basis: 25%;
    }
 
-   /*End Subscribe*/
+   @media (max-width:767px) {
+    .contact  .content .info{
+      order: -1;
+      text-align: center;
+      
+     }
+   }
+   @media (max-width:767px) {
+    
+    .contact  .content .info{
+      display: flex;
+      justify-content: space-around;
+     }
+     .contact .content .info .adress h4 {
+      margin-top: 30px !important;
+  }
+   }
+
+   .contact  .content .info h4{
+   text-transform: uppercase;
+   margin-bottom: 30px;
+   font-weight: 500;
+   font-size: 18px;
+  }
+
+  .contact  .content .info .phone {
+    display: block;
+    color: var(--component-color);
+    margin-bottom: 10px;
+     
+  }
+  .contact  .content .info .adress h4:nth-last-of-type(1) {
+   margin-top: 90px;
+  
+   }
+  
+   .contact .content address{
+    color: var(--component-color);
+    line-height: 2;
+   }
+
+   @media (max-width:767px) {
+    .contact  .content .info h4:nth-last-of-type(1) {
+      margin-top: 30px;
+     
+      }
+
+    .contact  .content .info address{
+      margin-bottom: 40px;
+      
+     }
+   }
+   
+   /*End Contact*/
